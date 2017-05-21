@@ -15,11 +15,11 @@ use _brotli::enc::reader::CompressorReader;
 
 py_module_initializer!(pycontw, initpycontw, PyInit_pycontw, |py, m| {
     m.add(py, "__doc__", "PyCon TW 2017")?;
-    m.add(py, "hello", py_fn!(py, hello(name: &str)))?;
-    m.add(py, "print", py_fn!(py, print(*args, **kwargs)))?;
-    m.add(py, "simple_hash", py_fn!(py, simple_hash(data: u64)))?;
+    m.add(py, "hello",              py_fn!(py, hello(name: &str)))?;
+    m.add(py, "print",              py_fn!(py, print(*args, **kwargs)))?;
+    m.add(py, "simple_hash",        py_fn!(py, simple_hash(data: u64)))?;
     m.add(py, "simple_random_hash", py_fn!(py, simple_random_hash(data: u64)))?;
-    m.add(py, "brotli", py_fn!(py, brotli(data: Vec<u8>)))?;
+    m.add(py, "brotli",             py_fn!(py, brotli(data: Vec<u8>)))?;
     Ok(())
 });
 
