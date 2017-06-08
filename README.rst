@@ -6,6 +6,32 @@ PyCon TW - Python Module in Rust
 .. contents:: Table of Contents
 
 
+Installation
+========================================
+
+Install Rust compiler:
+
+.. code-block:: sh
+
+    curl https://sh.rustup.rs
+    sh rustup-init.sh
+
+
+Install ``setuptools-rust``:
+
+.. code-block:: sh
+
+    pip install setuptools-rust
+
+
+Build Project:
+
+.. code-block:: sh
+
+    python setup.py install
+
+
+
 Project Skeleton
 ========================================
 
